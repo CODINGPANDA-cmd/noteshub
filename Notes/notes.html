@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Floating Circles Background -->
+  <div class="bg-circles">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="container">
+    <h1>📚 Explore Your Notes 📚</h1>
+
+    <!-- Search + Tabs -->
+    <div class="top-bar">
+      <input type="text" id="searchBox" placeholder="🔍 Search subject...">
+      <div class="tabs">
+        <button onclick="filterCategory('all')">All</button>
+        <button onclick="filterCategory('core')">Core</button>
+        <button onclick="filterCategory('dse')">DSE</button>
+        <button onclick="filterCategory('ge')">GE</button>
+        <button onclick="filterCategory('vac')">VAC</button>
+        <button onclick="filterCategory('sec')">SEC</button>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid">
+      <!-- Example Core -->
+      <div class="card core">
+        <div class="card-inner">
+          <div class="card-front">
+            <span class="emoji">⚖️</span>
+            <h3>Core Subjects</h3>
+            <p>B.A (Hons) Political Science</p>
+          </div>
+          <div class="card-back">
+            <h3>Core</h3>
+            <button onclick="openSubSubjects('core')">View Sub-Subjects</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example DSE -->
+      <div class="card dse">
+        <div class="card-inner">
+          <div class="card-front">
+            <span class="emoji">🏛️</span>
+            <h3>DSE</h3>
+            <p>Discipline Specific Electives</p>
+          </div>
+          <div class="card-back">
+            <h3>DSE</h3>
+            <button onclick="openSubSubjects('dse')">View Sub-Subjects</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub-Subject Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div id="subSubjectList"></div>
+    </div>
+  </div>
+
+  <!-- Floating Request Notes Widget -->
+ <div class="request-notes">
+  <h4>📥 Need More Premium Notes?</h4>
+  <a href="https://t.me/licious_insaan" target="_blank">
+    <span>📲 Telegram</span>
+  </a>
+  <a href="https://wa.me/919608404937" target="_blank">
+    <span>💬 WhatsApp</span>
+  </a>
+ </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
