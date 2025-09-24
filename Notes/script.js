@@ -4,32 +4,32 @@ const subjects = {
     { 
       name: "Modern Indian Political Thought", 
       notes: [
-        "core/mipt/notes1.pdf", 
-        "core/mipt/notes2.pdf"
+        "core/MIPT/notes1.pdf", 
+        "core/MIPT/notes2.pdf"
       ],
       pyq: [
-        "core/mipt/pyq1.pdf", 
-        "core/mipt/pyq2.pdf"
+        "core/MIPT/pyq1.pdf", 
+        "core/MIPT/pyq2.pdf"
       ],
     },
     { 
       name: "Western Political Thought", 
       notes: [
-        "core/wpt/notes1.pdf", 
-        "core/wpt/notes2.pdf"
+        "core/WPT/notes1.pdf", 
+        "core/WPT/notes2.pdf"
       ],
       pyq: [
-        "core/wpt/pyq1.pdf"
+        "core/WPT/pyq1.pdf"
       ]
     },
     { 
       name: "Political Process in India", 
       notes: [
-        "core/ppi/notes1.pdf", 
-        "core/ppi/notes2.pdf"
+        "core/PPI/notes1.pdf", 
+        "core/PPI/notes2.pdf"
       ],
       pyq: [
-        "core/ppi/pyq1.pdf"
+        "core/PPI/pyq1.pdf"
       ]
     }
   ],
@@ -124,5 +124,6 @@ function filterCategory(category) {
     }
   });
 }
+
 
 
