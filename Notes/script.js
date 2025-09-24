@@ -4,7 +4,7 @@ const subjects = {
     { 
       name: "Modern Indian Political Thought", 
       notes: [
-        "core/MIPT/notes1.pdf", 
+        "core/mipt/notes1.pdf", 
         "core/mipt/notes2.pdf"
       ],
       pyq: [
@@ -124,4 +124,5 @@ function filterCategory(category) {
     }
   });
 }
+
 
